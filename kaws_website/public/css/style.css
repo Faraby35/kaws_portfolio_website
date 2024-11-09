@@ -1,0 +1,42 @@
+/* Gaya untuk konten blog */
+.blog-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Gaya untuk gambar blog */
+.blog-content .blog-image {
+    width: 100%;                  /* Mengatur lebar gambar agar memenuhi lebar blog-content */
+    max-width: 700px;             /* Membatasi lebar maksimum */
+    display: block;
+    margin: 0 auto 20px auto;     /* Memusatkan gambar dan memberi jarak ke bawah */
+    border-radius: 8px;           /* Opsional: Membuat sudut gambar melengkung */
+}
+
+/* Gaya untuk elemen di dalam blog-content */
+.blog-content p {
+    margin-bottom: 1.5em;
+}
+
+.blog-content h1, 
+.blog-content h2, 
+.blog-content h3 {
+    color: #222;
+    line-height: 1.4;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .blog-content {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
